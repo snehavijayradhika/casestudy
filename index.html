@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <form class="box" name="myForm" action="list.html" method="POST" onsubmit="return validate()">
+        <h1>To-Do Sign In</h1>
+        <hr>
+
+        <div class="form">
+            <ul id="form-messages">
+                
+            </ul>
+        </div>
+        
+        <input type="text" name="" placeholder="Enter Username" id="username">
+        
+        <input type="password" name="" placeholder="Enter Password" id="password">
+        <input type="submit" name="" value="LOGIN" >
+    </form>
+    <script>
+
+function validate(callback)
+{
+    var username = document.forms["myForm"]["username"].value;
+    var password = document.forms["myForm"]["password"].value;
+
+    if(username=="admin" && password=="12345")
+    {
+        alert("Login successful");
+        return true;
+        callback();
+       
+    }
+    else{
+        alert("Login Credentials Failed");
+        return false;
+    }
+}
+login(callback);
+    </script>
+
+</body>
+</html>

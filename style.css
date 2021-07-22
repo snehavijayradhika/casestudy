@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(./images/photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+}
+
+#form-messages{
+    background-color: rgb(255, 232, 232);
+    border: 1px solid red;
+    color: red;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    max-width: 250px;
+}
+.box{
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+}
+
+.box h1{
+    color: white;
+    text-transform: initial;
+    font-weight: 400;
+    
+
+}
+
+.box input[type="text"], .box input[type="password"]{
+    border: 0;
+    background: gainsboro;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: 20px 10px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transform: 0.25p;
+    font-size: 15px;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 270px;
+    border-color: red;
+    background: none;
+
+}
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transform: 0.25p;
+    cursor: pointer;
+
+}
+.box input[type="submit"]:hover{
+    background: lightgreen;
+}
+
+
